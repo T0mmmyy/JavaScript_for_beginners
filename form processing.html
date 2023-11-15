@@ -6,12 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="text">Text</p>
+    <!-- <p id="text">Text</p> -->
+    <!-- <span class="simple-text">Text 1</span>
+    <span class="simple-text">Text 2</span>
+    <span class="simple-text">Text 3</span> -->
 
-    <span>Text 1</span>
-    <span>Text 2</span>
-    <span>Text 3</span>
-
+    <form id="main"></form>
+        <label for="name">Имя</label>
+        <input for="name" name="name" placeholder="Имя" id="name"><br><br>
+        <label for="password">Пароль</label>
+        <input for="password" name="pass" placeholder="Пароль" id="pass"><br><br>
+        <label for="repass">Проверка пароля</label>
+        <input for="password" name="repass" placeholder="Проверка пароля" id="repass"><br><br>
+        <span>Пол</span>
+        <input type="radio" name="state" id="male" value="Мужской">
+        <label for="male">Мужской</label>
+        <input type="radio" name="state" id="female" value="Женский">
+        <label for="male">Женский</label><br><br>
+        <input type="button" name="sumbit" value="Готово">
     <script src="form processing.js"></script>
 </body>
 </html>
