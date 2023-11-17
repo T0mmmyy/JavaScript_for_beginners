@@ -14,3 +14,23 @@
 // for(var i = 0; i < spans.length; i++) {
 //     console.log(spans[i].innerHTML);
 // }
+
+function checkForm(el) {
+    // var name = document.getElementById('name').value;
+    var name = el.name.value;
+    var pass = el.pass.value;
+    var repass = el.repass.value;
+    var repass = el.repass.value;
+    var state = el.state.value;
+    console.log(name + " - " + state + " - " + repass + " - " + pass);
+    var fail = "";
+    if(name == "" || pass == "" || state == "")
+        fail = "Заполните все поля"
+    else if(name.length <= 2 || name.length > 50)
+        fail = "Введите коректное имя"
+    else if(pass != repass)
+         fail = "Парол должны совпадать"
+
+
+    return false;
+}

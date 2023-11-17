@@ -11,7 +11,7 @@
     <span class="simple-text">Text 2</span>
     <span class="simple-text">Text 3</span> -->
 
-    <form id="main"></form>
+    <form id="main-form" onsubmit="return checkForm(this)" method="post">
         <label for="name">Имя</label>
         <input for="name" name="name" placeholder="Имя" id="name"><br><br>
         <label for="password">Пароль</label>
@@ -22,8 +22,9 @@
         <input type="radio" name="state" id="male" value="Мужской">
         <label for="male">Мужской</label>
         <input type="radio" name="state" id="female" value="Женский">
-        <label for="male">Женский</label><br><br>
-        <input type="button" name="sumbit" value="Готово">
+        <label for="female">Женский</label><br><br>
+        <input type="submit" name="sumbit" value="Готово">
+    </form>
     <script src="form processing.js"></script>
 </body>
 </html>
