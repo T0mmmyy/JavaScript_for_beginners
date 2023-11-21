@@ -30,7 +30,15 @@ function checkForm(el) {
         fail = "Введите коректное имя"
     else if(pass != repass)
          fail = "Парол должны совпадать"
+    else if(pass.split("&").length > 1)
+        fail = "Некоректный пароль";
 
-
-    return false;
+    if(fail !== "") {
+        document.getElementById('eror').innerHTML = fail;
+        return false;
+    }   else {
+        alert("Все данные заполнены");
+        window.location = 'https://www.youtube.com';
+        return false;
+    }
 }
